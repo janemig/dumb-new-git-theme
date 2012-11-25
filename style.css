@@ -1,0 +1,454 @@
+
+/*
+Theme Name: Dumb New Git Theme
+Theme URI: http://localhost:8888
+Author: Jane Migliore
+Author URI: http://lalunaproductions.com
+Description: An ultra-minimal set of super-clean templates for custom theme development.
+Version: 0.01
+*/
+
+/* =Structure
+-------------------------------------------------------------- */
+#page {
+	display: block;
+	margin: 2em;
+}
+#primary {
+	float: left;
+	margin: 0 -240px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 280px 0 0;
+}
+#main .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 180px;
+	padding: 0 0 0 25px;
+	border-left: 1px solid #e2e2e2;
+	margin-bottom: 20px;
+}
+#colophon {
+	clear: both;
+	display: block;
+	background: #eeeeee;
+	margin-top: 20px;
+	padding: 2px 14px;
+}
+
+/* Increase the size of the content area for templates without sidebars */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	margin: 0;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1, h2, h3, h4, p, li, a {
+	font-family: "grandma",sans-serif;
+}
+li {
+	list-style: none;
+}
+a, img a {
+	text-decoration: none;
+	outline: none;
+	border: none;
+	color: #8e0a8e;
+}
+img:hover {
+	opacity: 0.9;
+}
+img {
+	max-width: 100%;
+}
+
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#site-title a {
+	font-family: "grandma",sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	font-style: normal;
+	color: #000;
+	float: left;
+	
+}
+#site-description {
+	float: right;
+	margin: 35px 0 0 0;
+	color: #8e0a8e;
+	font: normal 1.4em "grandma",sans-serif;
+}
+
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access {
+	background: #000;
+	display: block;
+	float: left;
+	margin: 0 auto 1em;
+	width: 100%;
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+#access ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+#access li {
+	float: left;
+	position: relative;
+}
+#access a {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	color: #fff;
+}
+#access ul ul {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	background-color: #fff;
+	color: #000;
+	line-height: 1em;
+	padding: .5em .5em .5em 1em;
+	width: 10em;
+	height: auto;
+}
+#access li:hover > a,
+#access ul ul :hover > a {
+	background-color: #3f093f;
+}
+.current_page_item a {	
+	background-color: #641f64;
+}
+#access ul ul a:hover {
+	background-color: #f3f3f3;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+
+/* =Content
+-------------------------------------------------------------- */
+
+.sticky {
+}
+.entry-meta {
+	clear: both;
+	display: block;
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous {
+	float: left;
+	width: 50%;
+}
+#content nav .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#content #nav-above {
+	display: none;
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+
+/* Notices */
+.post .notice,
+.error404 #searchform {
+	background: #eee;
+	display: block;
+	padding: 1em;
+}
+
+/* Image Attachments */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+	background: #eee;
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* Gallery Posts */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+
+/* =Images
+-------------------------------------------------------------- */
+
+a img {
+	border: none;
+}
+p img {
+	margin-bottom: 0.5em; /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* =Forms
+-------------------------------------------------------------- */
+
+#searchform label {
+	display: none;
+}
+#searchform input#s {
+	width: 55%;
+}
+input[type=text],
+input#s {
+	margin: 0 .5em 0 0;
+	width: 60%;
+}
+textarea {
+	width: 80%;
+}
+
+/* Class for labelling required form items */
+.required {
+	color: #cc0033;
+}
+
+
+/* =Comments
+-------------------------------------------------------------- */
+
+article.comment {
+	display: block;
+}
+#respond input[type=text] {
+	display: block;
+	width: 60%;
+}
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget {
+	display: inline-block;
+}
+.widget ul li.current_page_item a {
+	background: #eeeeee;
+}
+.widget-area .widget_search {
+	overflow: hidden;
+	margin: 0 0 30px 0;
+}
+.widget-area .widget_search input {
+	float: left;
+	padding: 2px;	
+}
+input#searchsubmit {
+	padding: 2px 7px 2px;
+	margin: 0px 14px 0 4px;
+	background-color: #901d90;
+	border: none;
+	color: #fff;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	opacity: 0.8;
+	font: 85% "grandma",sans-serif;
+}
+input#searchsubmit:hover {
+	opacity: 1.0;
+}
+
+h3.widget-title {
+	margin: 0;
+}
+ul li a.widget {
+	margin: 0;
+}
+.textwidget {
+	color: #8e0a8e;
+	font: normal 1em "grandma",sans-serif;
+	padding: 7px 0 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+	
+}
