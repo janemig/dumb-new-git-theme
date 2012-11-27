@@ -5,6 +5,7 @@ Theme URI: http://localhost:8888
 Author: Jane Migliore
 Author URI: http://lalunaproductions.com
 Description: An ultra-minimal set of super-clean templates for custom theme development.
+Description: An ultra-minimal set of super-dumb templates for custom theme development.
 Version: 0.01
 */
 
@@ -451,4 +452,9 @@ ul li a.widget {
 -------------------------------------------------------------- */
 
 	
+#site-description {
+	float: right;
+	margin: 35px 0 0 0;
+	color: #8e0a8e;
+	font: normal 1.4em "grandma",sans-serif;
 }
